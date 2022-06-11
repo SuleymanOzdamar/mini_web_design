@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4898b6e2a7.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="jquery-min.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: rgba(114, 214, 231, 0.788);
+            width: 100%;
+            height: 1000px;
+        }
+
+        #h-div1 {
+            width: 100%;
+            height: 80px;
+            background-color: yellow;
+        }
+
+        #h-div2 {
+            width: 20%;
+            height: 80px;
+            background-color: #333;
+            float: left;
+            color: antiquewhite;
+            font-size: 50px;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        #h-div3 {
+            width: 60%;
+            height: 80px;
+            background-color: #333;
+            float: left;
+        }
+
+        #h-div4 {
+            width: 20%;
+            height: 80px;
+            background-color: #333;
+            float: left;
+        }
+
+        .menu {
+            list-style-type: none;
+            text-decoration: none;
+            float: left;
+            color: antiquewhite;
+            font-size: 30px;
+            line-height: 50px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .dil {
+            list-style-type: none;
+            text-decoration: none;
+            float: left;
+            color: antiquewhite;
+            font-size: 30px;
+            line-height: 50px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        #h-img {
+            width: 100%;
+            height: 920px;
+            position: relative;
+            left: 30%;
+        }
+
+        #h-resin {
+            width: 100%;
+            height: 100%;
+        }
+        #cerez{
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+            position: fixed;
+            bottom: 0;
+            z-index: 2;
+            line-height: 40px;
+            color: antiquewhite;
+            font-size: 20px;
+        }
+        #gizli{
+            color: darkred;
+            font-weight: bold;
+        }
+        #kapat{
+            border: 1px solid antiquewhite;
+            padding: 5px;
+            border-radius: 10px;
+            margin-left: 40%;
+        }
+        #sec{
+            width: 100%;
+            height: 500px;
+            background-color: #333;
+
+        }
+        .yorum{
+            width: 22%;
+            height: 400px;
+            background-color: lightgray;
+            float: left;
+            margin-top: 5%;
+            margin-left: 2%;
+            border-radius: 20px;
+            border: 1px solid antiquewhite;
+            box-shadow: yellow 0px 10px 20px;
+        }
+        .resimalan{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: auto;
+        }
+        .comment{
+            width: 100%;
+            height: 250px;
+            text-align: justify;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .kisi{
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            color: darkred;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 40px;
+        }
+        #foot{
+            width: 100%;
+            height: 600px;
+            background-color: antiquewhite;
+
+        }
+        #map{
+            width: 40%;
+            height: 500px;
+            border: 5px solid darkred;
+            position: relative;
+            top: 7%;
+            left: 5%;
+
+        }
+        #iletisim{
+            width: 40%;
+            height: 400px;
+            background-color: #555;
+            position: relative;
+            bottom: 70%;
+            left: 55%;
+        }
+        #adres{
+            width: 100%;
+            height: 250px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .add{
+            text-align: center;
+            color: antiquewhite;
+            padding: 10px;
+        }
+        #sosyal{
+            width: 100%;
+            height: 150px;
+            border: 1px solid darkred;
+            text-align: center;
+        }
+        .aa{
+            color: gray;
+            font-size: 48px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="h-div1">
+            <div id="h-div2">
+                LOGO
+            </div>
+            <div id="h-div3">
+                <ul>
+                    <li class="menu"><a class="menu" href="#">Anasayfa</a></li>
+                    <li class="menu"><a class="menu" href="#">Hakkımızda</a></li>
+                    <li class="menu"><a class="menu" href="#">Şubeler</a></li>
+                    <li class="menu"><a class="menu" href="#">Üye ol</a></li>
+                    <li class="menu"><a class="menu" href="#">Fiyat Al</a></li>
+                    <li class="menu"><a class="menu" href="#">İletişim</a></li>
+                </ul>
+            </div>
+            <div id="h-div4">
+                <ul>
+                    <li class="dil"><a class="dil" style="margin-left: 50px;" href="#">TR</a></li>
+                    <li class="dil"><a class="dil" href="#">EN</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="h-img">
+            <img id="h-resim" src="5.jpg" alt="">
+
+
+        </div>
+
+    </header>
+
+    <div id="cerez">
+
+        Bu web sitesi çerez kullanmaktadır. Daha fazla bilgi için lütfen <a id="gizli" href="#">gizlilik ve çerez politikasını </a> ziyaret edin.
+        <span id="kapat">Kapat</span>
+    </div>
+
+    <section id="sec">
+
+        <div id="y1" class="yorum">
+            <div id="k-alan" style="background-image:url(6.jpg)" class="resimalan"></div>
+            <div class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugiat deleniti a quod. Eos tempora deleniti porro optio non dolor impedit cumque delectus provident aliquid repudiandae facilis vel, nemo ipsam!</div>
+            <div class="kisi">Lorem ipsum</div>
+        </div>
+        <div id="y2" class="yorum">
+            <div id="k-alan" style="background-image:url(7.jpg)" class="resimalan"></div>
+            <div class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugiat deleniti a quod. Eos tempora deleniti porro optio non dolor impedit cumque delectus provident aliquid repudiandae facilis vel, nemo ipsam!</div>
+            <div class="kisi">Lorem ipsum</div>
+        </div>
+        <div id="y3" class="yorum">
+            <div id="k-alan" style="background-image:url(7.jpg)" class="resimalan"></div>
+            <div class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugiat deleniti a quod. Eos tempora deleniti porro optio non dolor impedit cumque delectus provident aliquid repudiandae facilis vel, nemo ipsam!</div>
+            <div class="kisi">Lorem ipsum</div>
+        </div>
+        <div id="y4" class="yorum">
+            <div id="k-alan" style="background-image:url(6.jpg)" class="resimalan"></div>
+            <div class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugiat deleniti a quod. Eos tempora deleniti porro optio non dolor impedit cumque delectus provident aliquid repudiandae facilis vel, nemo ipsam!</div>
+            <div class="kisi">Lorem ipsum</div>
+        </div>
+
+
+
+    </section>
+
+    <footer id="foot">
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d200.89516115262356!2d28.874901535346762!3d40.979524066527475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabd361d9f2bcd%3A0x109cda61c48e4b76!2sNeos%20Yaz%C4%B1l%C4%B1m%20Akademi!5e0!3m2!1str!2str!4v1654943873649!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div id="iletisim">
+
+            <div id="adres">
+                <p style="text-align: center; font-size: 20px; font-weight: bold;">Adreslerimiz</p>
+                <address class="add">Merkes: Example Caddesi Example Mah. No.5 Karsıyaka / İzmir Telefon : 01111111111</address>
+                <address class="add">Şube 1: Example Caddesi Example Mah. No.5 Karsıyaka / İzmir Telefon : 01111111111</address>
+                <address class="add">Şube 2: Example Caddesi Example Mah. No.5 Karsıyaka / İzmir Telefon : 01111111111</address>
+            </div>
+
+            <div id="sosyal">
+                <p style="text-align: center; font-size: 20px; font-weight: bold;">Follow Us</p>
+                <a href="#"><i class="aa kır fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="aa kır fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="aa mav fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="aa mav fa-brands fa-facebook"></i></a>
+                
+
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+    <script>
+        $(function () {
+            $(".menu").on({
+                mouseover: function () {
+                    $(this).css("color", "yellow");
+                },
+                mouseleave: function () {
+                    $(this).css("color", "white");
+                }
+            });
+        });
+
+        animasyon();
+
+        function animasyon() {
+            var say = 1;
+
+            setInterval(function () {
+                var a = "" + say + ".jpg";
+
+                $("#h-resim").fadeOut(3000, function () {
+                    $(this).queue(function () {
+                        $(this).attr("src", a);
+                        $(this).dequeue();
+                    });
+                    $(this).fadeIn(3000);
+                });
+                say++;
+                if (say == 6) {
+                    say = 1;
+                }
+            }, 6000);
+
+        }
+
+        $("#kapat").on({
+            mouseover: function(){
+                $(this).css("cursor", "pointer");
+
+            },
+            click: function() {
+                $("#cerez").css("display", "none");
+            } 
+            
+        })
+
+        $(".kır").on({
+            mouseover: function () {
+                $(this).css("color", "darkred")
+            },
+            mouseleave: function () {
+                $(this).css("color", "gray");
+            }
+        });
+
+        $(".mav").on({
+            mouseover: function () {
+                $(this).css("color", "darkblue")
+            },
+            mouseleave: function () {
+                $(this).css("color", "gray");
+            }
+        });
+
+    </script>
+</body>
+
+</html>
